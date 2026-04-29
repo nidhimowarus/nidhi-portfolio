@@ -14,18 +14,17 @@ const geistMono = Geist_Mono({
 
 /* 🔥 FIXED METADATA */
 export const metadata: Metadata = {
-  title: "Joy Mowar | Generative AI Engineer",
+  title: "Nidhi Mowar | Senior .NET Technical Manager",
   description:
-    "Portfolio of Joy Mowar – Generative AI Engineer specializing in RAG, Azure OpenAI, FastAPI, and enterprise AI systems.",
+    "Portfolio of Nidhi Mowar – Senior .NET Technical Manager leading large-scale modernization programs, transforming legacy systems into scalable .NET and cloud-based platforms",
   keywords: [
-    "Joy Mowar",
+    "Nidhi Mowar",
     "Generative AI Engineer",
     "RAG",
     "Azure OpenAI",
-    "FastAPI",
-    "AI Portfolio",
+    ".Net",
   ],
-  authors: [{ name: "Joy Mowar" }],
+  authors: [{ name: "Nidhi Mowar" }],
 };
 
 export default function RootLayout({

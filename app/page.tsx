@@ -3,23 +3,33 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 
-export default function JoyPortfolio() {
+export default function NidhiPortfolio() {
   const [page, setPage] = useState("about");
   const [showImage, setShowImage] = useState(false);
-  const [showRunImage, setShowRunImage] = useState(false);
+  const [showYogaImage, setShowYogaImage] = useState(false);
 
   const navItems = ["about", "projects", "achievements", "contact"];
 
-  const skills = [
-    "Azure OpenAI",
-    "RAG",
-    "FastAPI",
-    "SQL",
-    "Cosmos DB",
-    "FAISS",
-    "LLM Routing",
-    "REST APIs"
-  ];
+  const coreSkills = [
+  "C#",
+  ".NET Core",
+  "Web API",
+  "Azure",
+  "SQL Server",
+  "Oracle",
+  "Microservices",
+  "CI/CD",
+  "Agile",
+  "DevOps"
+];
+
+const aiSkills = [
+  "Azure OpenAI",
+  "RAG",
+  "FastAPI",
+  "Cosmos DB",
+  "LLM Concepts"
+];
 
   const projects = [
     {
@@ -30,7 +40,7 @@ export default function JoyPortfolio() {
     },
     {
       title: "Enterprise AI Chatbot",
-      desc: "RAG chatbot using Azure OpenAI and FastAPI.",
+      desc: "AI-powered chatbot using RAG and Azure OpenAI, explored for enterprise knowledge systems and intelligent data access.",
       github: "#",
       live: "#",
     },
@@ -63,13 +73,13 @@ export default function JoyPortfolio() {
 
           <div className="flex items-center gap-3">
             <button onClick={() => setShowImage(true)}>
-              <img src="/joy-photo.jpg" className="w-10 h-10 rounded-full border border-cyan-400"/>
+              <img src="/nidhi-photo.jpg" className="w-10 h-10 rounded-full border border-cyan-400"/>
             </button>
 
             <div>
-              <div className="text-cyan-400 font-semibold">Joy Mowar</div>
+              <div className="text-cyan-400 font-semibold">Nidhi Mowar</div>
               <div className="text-sm text-gray-300">
-                Generative AI Engineer | RAG | Azure | Backend Systems
+                Senior .NET Technical Manager | Azure | Enterprise Modernization
               </div>
             </div>
           </div>
@@ -101,22 +111,20 @@ export default function JoyPortfolio() {
 
               {/* LEFT */}
               <div>
-                <p className="text-cyan-400 mb-4">GENERATIVE AI ENGINEER</p>
+                <p className="text-cyan-400 mb-4">SENIOR TECHNICAL MANAGER</p>
 
                 <h1 className="text-5xl font-bold">
                   Building scalable,
                   <br />
-                  <span className="text-cyan-400">AI-powered systems</span>
+                  <span className="text-cyan-400">Modern Enterprise Systems</span>
                 </h1>
 
                 <p className="mt-6 text-gray-300 leading-7">
-                  I build AI systems using RAG, Azure OpenAI, FastAPI, SQL, and NoSQL
-                  to connect large language models with real enterprise data.
+                  I lead large-scale modernization programs, transforming legacy systems into scalable .NET and cloud-based platforms.
                 </p>
 
                 <p className="mt-3 text-gray-300 leading-7">
-                  My work focuses on intelligent routing, grounded responses, and building
-                  backend systems that are reliable, scalable, and production-ready—not just demos.
+                  With 17+ years of experience across global teams, I specialize in solution architecture, Azure DevOps, microservices, and delivering high-quality enterprise systems.
                 </p>
 
                 <div className="mt-8 flex gap-4">
@@ -130,7 +138,7 @@ export default function JoyPortfolio() {
                     Projects
                   </button>
 
-                  <a href="/Joy_Mowar_Resume.pdf" target="_blank"
+                  <a href="/Nidhi_Mowar_Resume.pdf" target="_blank"
                     className="px-6 py-3 border border-white/20 rounded-xl">
                     Resume
                   </a>
@@ -145,41 +153,73 @@ export default function JoyPortfolio() {
                   <div className="text-gray-400 mb-3">Core Expertise</div>
 
                   <div className="text-sm text-gray-300 space-y-2 mb-4">
-                    <div><span className="text-cyan-400">Role:</span> Generative AI Engineer</div>
-                    <div><span className="text-cyan-400">Focus:</span> RAG + Enterprise AI</div>
-                    <div><span className="text-cyan-400">Strength:</span> Multi-source routing</div>
+                    <div><span className="text-cyan-400">Role:</span> Senior Technical Manager</div>
+                    <div><span className="text-cyan-400">Focus:</span> .NET Modernization + Enterprise AI</div>
+                    <div><span className="text-cyan-400">Strength:</span> Enterprise-scale delivery</div>
                   </div>
 
                   {/* 🔥 PREMIUM CERTIFICATION */}
                   <a
-                    href="https://learn.microsoft.com/api/credentials/share/en-us/JoyMowar-7595/6626112233A4D34B?sharingId=ED8B691126BCC79"
+                    href="https://learn.microsoft.com/api/credentials/share/en-us/NidhiMowar-6749/12CEDB1669C0499B?sharingId=585B9E237CDF914A"
                     target="_blank"
-                    className="inline-block mb-4"
+                    className="inline-block mb-2"
                   >
                     <div className="px-4 py-2 bg-cyan-500/10 border border-cyan-400/30 rounded-lg text-cyan-300 text-sm hover:bg-cyan-500/20 transition">
                       🏆 Microsoft Certified: Azure AI Fundamentals (AI-900)
                     </div>
                   </a>
 
+                  <a
+                    href="https://learn.microsoft.com/api/credentials/share/en-us/NidhiMowar/92CD1285FC43AB0F?sharingId=FFEFC76164B67DA6"
+                    target="_blank"
+                  >
+                    <div className="px-4 py-2 bg-cyan-500/10 border border-cyan-400/30 rounded-lg text-cyan-300 text-sm hover:bg-cyan-500/20 transition">
+                      ☁️ Microsoft Certified: Azure Fundamentals (AZ-900)
+                    </div>
+                  </a>
+
                   {/* SKILLS */}
-                  <div className="flex flex-wrap gap-2">
-                    {skills.map((s) => (
-                      <span
-                        key={s}
-                        className="px-3 py-1 text-xs bg-white/10 rounded-full"
-                      >
-                        {s}
-                      </span>
-                    ))}
+                  <div className="space-y-3">
+
+                    {/* CORE STACK */}
+                    <div>
+                      <div className="text-xs text-gray-400 mb-1">Core Stack</div>
+                      <div className="flex flex-wrap gap-2">
+                        {coreSkills.map((s) => (
+                          <span
+                            key={s}
+                            className="px-3 py-1 text-xs bg-white/10 rounded-full"
+                          >
+                            {s}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+
+                    {/* AI EXPOSURE */}
+                    <div>
+                      <div className="text-xs text-gray-400 mb-1">AI Exposure</div>
+                      <div className="flex flex-wrap gap-2">
+                        {aiSkills.map((s) => (
+                          <span
+                            key={s}
+                            className="px-3 py-1 text-xs bg-cyan-500/10 rounded-full text-cyan-300"
+                          >
+                            {s}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+
                   </div>
                 </div>
 
-                {/* RUNNING */}
+                {/* YOGA */}
                 <div className="bg-[#0f172a] p-4 rounded-xl border border-white/10 flex gap-4 items-center">
 
                   <img
-                    src="/running.jpg"
-                    onClick={() => setShowRunImage(true)}
+                    src="/yoga.jpg"
+                    onClick={() => setShowYogaImage(true)}
                     className="w-28 h-28 object-cover rounded-lg cursor-pointer"
                   />
 
@@ -189,14 +229,13 @@ export default function JoyPortfolio() {
                     </div>
 
                     <p className="text-sm text-gray-300 mt-1">
-                      I enjoy long-distance running and won a District Gold Medal in the Under-19 8K run.
-                      It built discipline, endurance, and consistency—qualities I bring into building reliable AI systems.
+                      I practice Yoga regularly, focusing on balance, discipline, and mental clarity. It helps me stay grounded and consistent—qualities I bring into leadership and engineering.
                     </p>
 
                     <div className="flex gap-2 mt-2 text-xs">
-                      <span className="bg-white/10 px-2 py-1 rounded">🏅 Gold</span>
-                      <span className="bg-white/10 px-2 py-1 rounded">🏃 8K</span>
-                      <span className="bg-white/10 px-2 py-1 rounded">🎯 U-19</span>
+                      <span className="bg-white/10 px-2 py-1 rounded">🧘 Yoga</span>
+                      <span className="bg-white/10 px-2 py-1 rounded">⚖️ Balance</span>
+                      <span className="bg-white/10 px-2 py-1 rounded">🧠 Focus</span>
                     </div>
                   </div>
                 </div>
@@ -250,7 +289,7 @@ export default function JoyPortfolio() {
                   Enterprise AI chatbot delivered
                 </div>
                 <div className="bg-[#0f172a] p-5 rounded-xl">
-                  District Gold Medal - 8K Run
+                  Microsoft Certified: Azure Fundamentals (AZ-900)
                 </div>
               </div>
             </section>
@@ -272,15 +311,15 @@ export default function JoyPortfolio() {
 
                 <div>
                   <div className="text-cyan-400 text-sm">Email</div>
-                  <a href="mailto:joymowar@hotmail.com" className="text-cyan-300 hover:underline">
-                    joymowar@hotmail.com
+                  <a href="mailto:nidhimowar@hotmail.com" className="text-cyan-300 hover:underline">
+                    nidhimowar@hotmail.com
                   </a>
                 </div>
 
                 <div>
                   <div className="text-cyan-400 text-sm">LinkedIn</div>
                   <a
-                    href="https://www.linkedin.com/in/joy-mowar-a6aa78301/"
+                    href="https://www.linkedin.com/in/nidhi-mowar-523274330/"
                     target="_blank"
                     className="text-cyan-300 hover:underline"
                   >
@@ -299,14 +338,14 @@ export default function JoyPortfolio() {
       {showImage && (
         <div className="fixed inset-0 bg-black/80 flex justify-center items-center"
           onClick={() => setShowImage(false)}>
-          <img src="/joy-photo.jpg" className="w-[250px] rounded-xl"/>
+          <img src="/nidhi-photo.jpg" className="w-[250px] rounded-xl"/>
         </div>
       )}
 
-      {showRunImage && (
+      {showYogaImage && (
         <div className="fixed inset-0 bg-black/80 flex justify-center items-center"
-          onClick={() => setShowRunImage(false)}>
-          <img src="/running.jpg" className="w-[350px] rounded-xl"/>
+          onClick={() => setShowYogaImage(false)}>
+          <img src="/yoga.jpg" className="w-[350px] rounded-xl"/>
         </div>
       )}
 
