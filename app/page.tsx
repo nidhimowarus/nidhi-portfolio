@@ -113,7 +113,7 @@ const projects = [
         {/* ABOUT */}
         {page === "about" && (
           <PageWrap>
-            <section className="max-w-7xl mx-auto grid md:grid-cols-2 gap-14 px-6 pt-16 pb-24 items-start">
+            <section className="max-w-7xl mx-auto grid md:grid-cols-2 gap-14 px-6 pt-10 pb-24 items-start">
 
               {/* LEFT */}
               <div>
@@ -125,15 +125,15 @@ const projects = [
                   <span className="text-cyan-400">Modern Enterprise Systems</span>
                 </h1>
 
-                <p className="mt-6 text-gray-300 leading-7">
+                <p className="mt-4 text-gray-300 leading-7">
                   I lead large-scale modernization programs, transforming legacy systems into scalable .NET and cloud-based platforms.
                 </p>
 
-                <p className="mt-3 text-gray-300 leading-7">
+                <p className="mt-2 text-gray-300 leading-7">
                   With 17+ years of experience across global teams, I specialize in solution architecture, Azure DevOps, microservices, and delivering high-quality enterprise systems.
                 </p>
 
-                <div className="mt-8 flex gap-4">
+                <div className="mt-6 flex gap-4">
                   <button onClick={() => setPage("contact")}
                     className="px-6 py-3 bg-cyan-500 text-black rounded-xl">
                     Contact
@@ -152,7 +152,7 @@ const projects = [
               </div>
 
               {/* RIGHT */}
-              <div className="space-y-6 pb-20">
+              <div className="space-y-4 pb-20">
 
                 {/* CORE EXPERTISE */}
                 <div className="bg-[#0f172a] p-6 rounded-xl border border-white/10">
