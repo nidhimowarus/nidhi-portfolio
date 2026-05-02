@@ -113,7 +113,7 @@ const projects = [
         {/* ABOUT */}
         {page === "about" && (
           <PageWrap>
-            <section className="max-w-7xl mx-auto grid md:grid-cols-2 gap-14 px-6 py-24 pb-12 items-start">
+            <section className="max-w-7xl mx-auto grid md:grid-cols-2 gap-14 px-6 pt-16 pb-24 items-start">
 
               {/* LEFT */}
               <div>
@@ -152,7 +152,7 @@ const projects = [
               </div>
 
               {/* RIGHT */}
-              <div className="space-y-6 pb-10">
+              <div className="space-y-6 pb-20">
 
                 {/* CORE EXPERTISE */}
                 <div className="bg-[#0f172a] p-6 rounded-xl border border-white/10">
