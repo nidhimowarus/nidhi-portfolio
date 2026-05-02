@@ -31,26 +31,32 @@ const aiSkills = [
   "LLM Concepts"
 ];
 
-  const projects = [
-    {
-      title: "AI Decision Engine",
-      desc: "Multi-source AI routing across RAG, SQL, NoSQL, and LLM fallback.",
-      github: "#",
-      live: "#",
-    },
-    {
-      title: "Enterprise AI Chatbot",
-      desc: "AI-powered chatbot using RAG and Azure OpenAI, explored for enterprise knowledge systems and intelligent data access.",
-      github: "#",
-      live: "#",
-    },
-    {
-      title: "AI CMDB Prototype",
-      desc: "GenAI system for enterprise metadata insights.",
-      github: "#",
-      live: "#",
-    },
-  ];
+const projects = [
+  {
+    title: "Enterprise AI Chatbot",
+    desc: "RAG-based chatbot using Azure OpenAI and FastAPI for enterprise knowledge access.",
+    github: "#",
+    live: "#",
+  },
+  {
+    title: ".NET Modernization Program",
+    desc: "Led migration of legacy mainframe systems to scalable .NET microservices across multiple plants.",
+    github: "#",
+    live: "#",
+  },
+  {
+    title: "Motor Vehicle Systems Modernization",
+    desc: "Modernized state-level systems for vehicle issuance and compliance using .NET and Oracle.",
+    github: "#",
+    live: "#",
+  },
+  {
+    title: "Investment Banking Platforms",
+    desc: "Built advisory and trading systems used by front-office traders across global markets.",
+    github: "#",
+    live: "#",
+  },
+];
 
   const PageWrap = ({ children }: any) => (
     <motion.div
@@ -107,7 +113,7 @@ const aiSkills = [
         {/* ABOUT */}
         {page === "about" && (
           <PageWrap>
-            <section className="max-w-7xl mx-auto grid md:grid-cols-2 gap-14 px-6 py-24 pb-32 items-center">
+            <section className="max-w-7xl mx-auto grid md:grid-cols-2 gap-14 px-6 py-24 pb-12 items-start">
 
               {/* LEFT */}
               <div>
@@ -146,7 +152,7 @@ const aiSkills = [
               </div>
 
               {/* RIGHT */}
-              <div className="space-y-6">
+              <div className="space-y-6 pb-10">
 
                 {/* CORE EXPERTISE */}
                 <div className="bg-[#0f172a] p-6 rounded-xl border border-white/10">
@@ -251,20 +257,11 @@ const aiSkills = [
             <section className="max-w-7xl mx-auto px-6 py-20">
               <h2 className="text-3xl mb-10">Projects</h2>
 
-              <div className="grid md:grid-cols-3 gap-6">
+              <div className="grid md:grid-cols-2 gap-6">
                 {projects.map((p) => (
                   <div key={p.title} className="bg-[#0f172a] p-5 rounded-xl">
                     <h3 className="text-cyan-400">{p.title}</h3>
                     <p className="text-gray-300 mt-3">{p.desc}</p>
-
-                    <div className="mt-4 flex gap-3">
-                      <a href={p.github} className="border px-3 py-1 text-sm rounded hover:text-cyan-400">
-                        GitHub
-                      </a>
-                      <a href={p.live} className="bg-cyan-500 px-3 py-1 text-sm rounded text-black">
-                        Live Demo
-                      </a>
-                    </div>
                   </div>
                 ))}
               </div>
